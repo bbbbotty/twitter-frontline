@@ -1,0 +1,9 @@
+site_name: Twitter 戰線
+nav:
+  - 主頁: index.md
+  - 安裝: install.md
+  - retweet.exe: retweet.md
+  - twitterhelpbot.exe: twitterhelpbot.md
+  - tweetall.exe: tweetall.md
+#  - Python 進階: python.md
+theme: readthedocs
