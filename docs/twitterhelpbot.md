@@ -1,7 +1,7 @@
 # twitterhelpbot.exe
 
 ## 做緊乜
-用 Telegram Web Client 解 @TwitterHelpBot **香港直擊** 任務
+用 Telegram web client 解 [@TwitterHelpBot](https://t.me/TwitterHelpBot) **香港直擊** 任務
 
 ### 注意
 1. 個 Program 唔識 Login Telegram 同 Twitter, 兩個 Account 一定要用 FireFox Login 咗一次先
@@ -21,7 +21,7 @@ twitterhelpbot.exe [-h] [--wait WAIT] [--continuation] [--headless]
 >
 
 ## 例子
-* Telegram Web Client 有時要等好耐先 Ready, 可以 set 做等兩分鐘
+* Telegram Web Client 有時要等好耐先 Ready, 可以 Set 做等兩分鐘
     * `twitterhelpbot --wait 120`
 * 如果之前個任務未做完就熄咗，可以加個 --continuation, 就唔會再入 /task, 直接拎上次嘅任務做嘢
     * `twitterhelpbot --continuation`

@@ -5,3 +5,4 @@ __pycache__/
 tweet_list.txt
 build/
 dist/
+*.spec
