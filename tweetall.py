@@ -1,10 +1,11 @@
-from twitter import Twitter
 from ff import init as browser_init
 import argparse
 import re
 import time
+from datetime import datetime
 import utils
 import os
+
 parser = argparse.ArgumentParser(description='Retweet all tweets in a file')
 parser.add_argument('url_or_file', nargs='?', default='tweet_list.txt')
 parser.add_argument('--headless', action='store_true', default=False)
@@ -28,7 +29,9 @@ with browser_init(executable_path=args.executable_path, profile_path=args.profil
             for url in regex.findall(a.get_attribute('href')):
                 urls.add(url)
 
-    twitter = Twitter(browser)
+    utils.retweet_all(browser, urls)
 
-    for url in urls:
-        utils.tweets(browser, twitter, url)
+print("bye " + str(datetime.now()))
+print("")
+
+quit()

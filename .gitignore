@@ -6,3 +6,4 @@ tweet_list.txt
 build/
 dist/
 *.spec
+history.json

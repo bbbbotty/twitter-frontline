@@ -6,7 +6,6 @@ from twitter import Twitter
 import argparse
 from selenium.webdriver.common.by import By
 
-
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='Retweet a specific page')
@@ -51,4 +50,7 @@ if __name__ == "__main__":
                 if len(visited) > args.posts_to_read or tweeted >= args.posts_to_retweet: break
                 time.sleep(2)
 
-        time.sleep(60)
+    print("bye " + str(datetime.now()))
+    print("")
+
+    quit()
