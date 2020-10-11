@@ -101,8 +101,11 @@ class Twitter():
                     i = 0
                 else:
                     i += 1
-                self.browser.scroll_to_element(tweets[i].element)
 
+                try:
+                    self.browser.scroll_to_element(tweets[i].element)
+                except StaleElementReferenceException: continue
+            
             # no scroll no new tweet
             if i >= len(tweets):
                 self.browser.page_down()
