@@ -5,9 +5,9 @@
 
 * [`retweet.exe`](retweet.md) - 就咁 Double click 就會 Like & Retweet [小白鼠先生](https://twitter.com/shiroihamusan)
     * 建議1日行2-3次
-* [`twitterhelperbot.exe`](twitterhelperbot.md) - 就咁 Double click 就會用 Telegram web client 解 [@TwitterHelpBot](https://t.me/TwitterHelpBot) 嘅 **香港直擊**, **國際戰線**, 同 **外語新聞** 任務
+* [`twitterhelpbot.exe`](twitterhelpbot.md) - 就咁 Double click 就會用 Telegram web client 解 [@TwitterHelpBot](https://t.me/TwitterHelpBot) 嘅 **香港直擊**, **國際戰線**, 同 **外語新聞** 任務
     * 建議1日行兩次
-* [`twitterall.exe`](twitterall.md) - 準備有 Twitter links 嘅 `tweet_list.txt` file, 再 Double click 就會 Like & Retweet 所有 `tweet_list.txt` 入面嘅 Twitter links
+* [`tweetall.exe`](tweetall.md) - 準備有 Twitter links 嘅 `tweet_list.txt` file, 再 Double click 就會 Like & Retweet 所有 `tweet_list.txt` 入面嘅 Twitter links
 
 ## 注意
 * 每個 exe 第一次行都會問係唔係開 Firewall, 因為個 Program 同 Browser 之間係用 Network 溝通，但因為只係 localhost 行，可以㩒 Cancel

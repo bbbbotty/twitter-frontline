@@ -4,7 +4,7 @@
 Like & retweet 一個 Twitter Account. 無 specific 嘅話會 like & retweet 小白鼠先生嘅 account
 
 ### 注意
-個 Program 唔識 Login Twitter, 個 Account 一定要用 FireFox Login 咗一次先
+個 Program 唔識 Login Twitter, 個 Account 一定要用 Firefox Login 咗一次先
 
 ## 用法
 ```

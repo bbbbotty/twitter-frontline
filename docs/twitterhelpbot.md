@@ -4,7 +4,7 @@
 用 Telegram web client 解 [@TwitterHelpBot](https://t.me/TwitterHelpBot) **香港直擊**, **國際戰線**, 同 **外語新聞** 任務
 
 ### 注意
-1. 個 Program 唔識 Login Telegram 同 Twitter, 兩個 Account 一定要用 FireFox Login 咗一次先
+1. 個 Program 唔識 Login Telegram 同 Twitter, 兩個 Account 一定要用 Firefox Login 咗一次先
 1. Telegram account 必須已經加咗 [@TwitterHelpBot](https://t.me/TwitterHelpBot)
 1. 個 Program 唔會㩒 **完成任務**
 
