@@ -1,7 +1,7 @@
 # twitterhelpbot.exe
 
 ## 做緊乜
-用 Telegram web client 解 [@TwitterHelpBot](https://t.me/TwitterHelpBot) **香港直擊** 任務
+用 Telegram web client 解 [@TwitterHelpBot](https://t.me/TwitterHelpBot) **香港直擊**, **國際戰線**, 同 **外語新聞** 任務
 
 ### 注意
 1. 個 Program 唔識 Login Telegram 同 Twitter, 兩個 Account 一定要用 FireFox Login 咗一次先
@@ -10,13 +10,14 @@
 
 ## 用法
 ```
-twitterhelpbot.exe [-h] [--wait WAIT] [--continuation] [--headless] 
+twitterhelpbot.exe [-h] [--wait WAIT] [--continuation] [--headless] [--history]
 ```
 | 參數        | 咩嚟                               | 預設值 |
 |-------------|-----------------------------------|--------|
 | --wait | 等幾多秒 Telegram Web Client Ready | 10    |
 | --continuation | 繼續之前嘅任務 | |
 | --headless | 無 UI |     |
+| --history | 記低 Retweet 過乜，唔會再去，想不留㾗跡可以 pass 個 "" 入去 | history.json |
 
 >
 

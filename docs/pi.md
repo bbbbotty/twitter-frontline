@@ -1,9 +1,12 @@
+# 裝 Python 3
+1. 跟住 <https://projects.raspberrypi.org/en/projects/generic-python-install-python3#linux> 去裝 Python 3
+
 # Download Twitter戰線 Source Code
 1. 去 https://github.com/bbbotty/twitter-frontline/releases Download 最新 Release, 再 Extract 個 Package
 1. 或者 git clone https://github.com/bbbotty/twitter-frontline.git (如果之前已經 clone 咗，用 git pull)
-1. 行 `pip install -r requirements.txt`
+1. 行 `pip3 install -r requirements.txt`
 
-# Install Firefox
+# 裝 Firefox
 1. 跟住 <https://pimylifeup.com/raspberry-pi-firefox/> 嘅 **How to Install Firefox** 去裝 Firefox.
 1. 用 Raspberry PI desktop 去 login [Twitter](https://www.twitter.com/login) 同 [Telegram](https://web.telegram.org/)
 
@@ -42,13 +45,13 @@ parser.add_argument('--executable_path', default="/usr/bin/firefox")
 parser.add_argument('--profile_path', default="/home/pi/.mozilla/firefox/xxxxx.default-esr")
 ```
 ## tweetall.py
-第 11-12 行:
+第 13-14 行:
 ```
 parser.add_argument('--executable_path', default="/usr/bin/firefox")
 parser.add_argument('--profile_path', default="/home/pi/.mozilla/firefox/xxxxx.default-esr")
 ```
 ## twitterhelpbot.py
-第 17-18 行:
+第 18-19 行:
 ```
 parser.add_argument('--executable_path', default="/usr/bin/firefox")
 parser.add_argument('--profile_path', default="/home/pi/.mozilla/firefox/xxxxx.default-esr")
