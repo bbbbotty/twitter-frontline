@@ -4,7 +4,9 @@
 ## 用法
 
 * [`retweet.exe`](retweet.md) - 就咁 Double click 就會 Like & Retweet [小白鼠先生](https://twitter.com/shiroihamusan)
+    * 建議1日行2-3次
 * [`twitterhelperbot.exe`](twitterhelperbot.md) - 就咁 Double click 就會用 Telegram web client 解 [@TwitterHelpBot](https://t.me/TwitterHelpBot) 嘅 **香港直擊** 任務
+    * 建議1日行兩次
 * [`twitterall.exe`](twitterall.md) - 準備有 Twitter links 嘅 `tweet_list.txt` file, 再 Double click 就會 Like & Retweet 所有 `tweet_list.txt` 入面嘅 Twitter links
 
 ## 注意
