@@ -1,28 +1,28 @@
 # twitterhelpbot.exe
 
-## 做緊乜
-用 Telegram web client 解 [@TwitterHelpBot](https://t.me/TwitterHelpBot) **香港直擊**, **國際戰線**, 同 **外語新聞** 任務
+## Description
+Use Telegram web client to like and retweets [@TwitterHelpBot](https://t.me/TwitterHelpBot)'s tasks
 
-### 注意
-1. 個 Program 唔識 Login Telegram 同 Twitter, 兩個 Account 一定要用 Firefox Login 咗一次先
-1. Telegram account 必須已經加咗 [@TwitterHelpBot](https://t.me/TwitterHelpBot)
-1. 個 Program 唔會㩒 **完成任務**
+### Note
+1. It does not login to Telegram and Twitter. Please use Firefox login once first.
+1. Telegram account shall already added [@TwitterHelpBot](https://t.me/TwitterHelpBot)
+1. It does not press **完成任務** button
 
-## 用法
+## Usage
 ```
 twitterhelpbot.exe [-h] [--wait WAIT] [--continuation] [--headless] [--history]
 ```
-| 參數        | 咩嚟                               | 預設值 |
+| Parameter         | Description    | Default                       |
 |-------------|-----------------------------------|--------|
-| --wait | 等幾多秒 Telegram Web Client Ready | 10    |
-| --continuation | 繼續之前嘅任務 | |
-| --headless | 無 UI |     |
-| --history | 記低 Retweet 過乜，唔會再去，想不留㾗跡可以 pass 個 "" 入去 | history.json |
+| --wait | How long to wait for Telegram Web Client getting ready (seconds) | 10    |
+| --continuation | Continue previous tasks | |
+| --headless | No UI |     |
+| --history | Save the retweet URLs to prevent revisiting. Use "" if no history desired | history.json |
 
 >
 
-## 例子
-* Telegram Web Client 有時要等好耐先 Ready, 可以 Set 做等兩分鐘
+## Example
+* Sometimes, Telegram Web Client might take a long time to get ready. We can set it to wait for 2 minutes
     * `twitterhelpbot --wait 120`
-* 如果之前個任務未做完就熄咗，可以加個 --continuation, 就唔會再入 /task, 直接拎上次嘅任務做嘢
+* If the previous execution was halt, using --continuation will not enter /task to query the tasks again
     * `twitterhelpbot --continuation`

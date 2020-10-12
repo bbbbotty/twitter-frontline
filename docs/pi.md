@@ -1,64 +1,66 @@
-# 裝 Python 3
-1. 跟住 <https://projects.raspberrypi.org/en/projects/generic-python-install-python3#linux> 去裝 Python 3
+# Install Python 3
+1. Follow the instructions in <https://projects.raspberrypi.org/en/projects/generic-python-install-python3#linux> to install Python 3
 
-# Download Twitter戰線 Source Code
-1. 去 https://github.com/bbbotty/twitter-frontline/releases Download 最新 Release, 再 Extract 個 Package
-1. 或者 git clone https://github.com/bbbotty/twitter-frontline.git (如果之前已經 clone 咗，用 git pull)
-1. 行 `pip3 install -r requirements.txt`
+# Download Source Code
+1. Visit https://github.com/bbbotty/twitter-frontline/releases to download the latest release and extract the package
+1. Run `git clone https://github.com/bbbotty/twitter-frontline.git` (Or use `git pull` if you already cloned it)
+1. Install the dependencies `pip3 install -r requirements.txt`
 
-# 裝 Firefox
-1. 跟住 <https://pimylifeup.com/raspberry-pi-firefox/> 嘅 **How to Install Firefox** 去裝 Firefox.
-1. 用 Raspberry PI desktop 去 login [Twitter](https://www.twitter.com/login) 同 [Telegram](https://web.telegram.org/)
+# Install Firefox
+1. Follow the instructions in <https://pimylifeup.com/raspberry-pi-firefox/> under the **How to Install Firefox** to install Firefox.
+1. Use Raspberry PI desktop to login [Twitter](https://www.twitter.com/login) and [Telegram](https://web.telegram.org/)
 
 # Download geckodriver
-1. 暫時 Raspberry PI 用到 geckodriver 嘅最新片本係 v0.23 <https://github.com/mozilla/geckodriver/releases/tag/v0.23.0>
-    * 直接 Download: <https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-arm7hf.tar.gz>
-1. Extract 完將 geckodriver 放响 path 或者 twitter-frontline 嘅 directory
+1. Currently, Raspberry PI can use the geckodriver up to v0.23 <https://github.com/mozilla/geckodriver/releases/tag/v0.23.0>
+    * Direct download: <https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-arm7hf.tar.gz>
+1. Extract geckodriver into system path or the twitter-frontline directory
 
-# 設定
-`retweet.py`, `tweetall.py`, `twitterhelpbot.py` 都會食兩個 parameters:
+# Settings
+`retweet.py`, `tweetall.py`, `twitterhelpbot.py` have parameters:
 
-| 參數              | 咩嚟            | 預設值                       |
+| Parameter         | Description    | Default                       |
 |-------------------|----------------|------------------------------|
-| --executable_path | Firefox 嘅話置 | `ff\App\Firefox64\firefox.exe` |
-| --profile_path | Firefox User Profile 嘅位置 | `ff\Data\profile` |
+| --executable_path | Firefox executable location | `ff\App\Firefox64\firefox.exe` |
+| --profile_path | Firefox User Profile location | `ff\Data\profile` |
 
-因為預設值係俾 Windows 行 Firefox Portable, 所以指住一條 relative path, 要代入返相應參數
+The default values are for Forefox Portable running in Windows, please use the following values
 
 * executable_path: `/usr/bin/firefox`
 * profile_path: `/home/pi/.mozilla/firefox/xxxxx.default-esr`
-    * `xxxxx` 係亂數，要用 `ls /home/pi/.mozilla/firefox/` 睇返
+    * `xxxxx` is a random number, please `ls /home/pi/.mozilla/firefox/` to see the correct directory name
 
-可以試吓行呢句去睇吓有無 Error: `/path/to/firefox -P xxxxx.default-esr -headless`
+Test if it runs without errors: `/path/to/firefox -P xxxxx.default-esr -headless`
 
-# 執行示範
+# Example
 ```
 python retweet.py –-executable_path /usr/bin/firefox –-profile_path /home/pi/.mozilla/firefox/xxxxx.default-esr --headless
 ```
 
-# 改 Code
-如果唔想咁麻煩，可以直接改 source code
+# Change the Code
+You can change the parameter default values in the source code
 ## retweet.py
-第 17-18 行:
+Line 17-18:
 ```
 parser.add_argument('--executable_path', default="/usr/bin/firefox")
 parser.add_argument('--profile_path', default="/home/pi/.mozilla/firefox/xxxxx.default-esr")
 ```
 ## tweetall.py
-第 13-14 行:
+Line 13-14:
 ```
 parser.add_argument('--executable_path', default="/usr/bin/firefox")
 parser.add_argument('--profile_path', default="/home/pi/.mozilla/firefox/xxxxx.default-esr")
 ```
 ## twitterhelpbot.py
-第 18-19 行:
+Line 18-19:
 ```
 parser.add_argument('--executable_path', default="/usr/bin/firefox")
 parser.add_argument('--profile_path', default="/home/pi/.mozilla/firefox/xxxxx.default-esr")
 ```
 
 # VPN
-可以裝埋 VPN, 例如 NordVPN: <https://pimylifeup.com/raspberry-pi-nordvpn/>
+You may install VPN such as NordVPN: <https://pimylifeup.com/raspberry-pi-nordvpn/>
 
 # 注意
-如果要 set cron job 自己行，唔好 set 得太密，一來有機會俾 Twitter 當個 Account 係 Bot, 二來 `retweet.py` 有機會 Loop 死, 可以加返個 `--posts_to_read` 去 set 細少少解決 (Default: 40)
+If you are setting up a cron job, please do not run it too frequent for
+1. Twitter may identify your account as a bot account
+1. `retweet.py` might take a long time to finish. You can specify a small number to `--posts_to_read` argument (Default: 40)

@@ -1,23 +1,23 @@
 # tweetall.exe
 
-## 做緊乜
-Like & Retweet 所有响 Text file 或者網頁入面嘅 twitter links
+## Description
+Like & Retweet all tweets in a file or a web page
 
-### 注意
-個 Program 唔識 Login Twitter, 個 Account 一定要用 Firefox Login 咗一次先
+### Note
+It does not login to Twitter. Please use Firefox login once first.
 
-## 用法
+## Usage
 ```
 tweetall.exe [-h] [--headless] [--history] [url_or_file]
 ```
-| 參數        | 咩嚟                               | 預設值 |
+| Parameter         | Description    | Default                       |
 |-------------|-----------------------------------|--------|
-| --headless | 無 UI |     |
-| --history | 記低 Retweet 過乜，唔會再去，想不留㾗跡可以 pass 個 "" 入去 | history.json |
-| url_or_file | 有 Twitter links 嘅 Text file 或者網頁 | tweet_list.txt |
+| --headless | No UI |     |
+| --history | Save the retweet URLs to prevent revisiting. Use "" if no history desired | history.json |
+| url_or_file | File or web page listed the tweets | tweet_list.txt |
 
 >
 
-## 例子
-* Like & retweet 晒响連登嘅 Twitter links ![](images/lihkg.png)
+## Example
+* Like & retweet all tweets listed in a LIHKG page ![](images/lihkg.png)
     * `tweetall https://lihkg.com/thread/2196214/page/37`

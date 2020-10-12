@@ -1,7 +1,7 @@
-site_name: Twitter 戰線
+site_name: Twitter Frontline
 pages:
-  - 主頁: index.md
-  - 安裝: install.md
+  - Main: index.md
+  - Installation: install.md
   - Windows:
     - retweet.exe: retweet.md
     - twitterhelpbot.exe: twitterhelpbot.md

@@ -1,20 +1,20 @@
-# Twitter 戰線
-幾個唔同嘅 Program 去做 Twitter 任務，但記得要得閒都用個 Account 去 Post 吓自己嘢，唔係俾 Twitter 話個 Account 係 Bot 就麻煩。
+# Twitter Frontline
+A few programs to automate Twitter "missions". PLease use the account to post your own stuff to prevent your account from identified as a bot.
 
-## 用法
+## Usage
 
-* [`retweet.exe`](retweet.md) - 就咁 Double click 就會 Like & Retweet [小白鼠先生](https://twitter.com/shiroihamusan)
-    * 建議1日行2-3次
-* [`twitterhelpbot.exe`](twitterhelpbot.md) - 就咁 Double click 就會用 Telegram web client 解 [@TwitterHelpBot](https://t.me/TwitterHelpBot) 嘅 **香港直擊**, **國際戰線**, 同 **外語新聞** 任務
-    * 建議1日行兩次
-* [`tweetall.exe`](tweetall.md) - 準備有 Twitter links 嘅 `tweet_list.txt` file, 再 Double click 就會 Like & Retweet 所有 `tweet_list.txt` 入面嘅 Twitter links
+* [`retweet.exe`](retweet.md) - Like & Retweet [@shiroihamusan 小白鼠先生](https://twitter.com/shiroihamusan) when double clicked
+    * Recommended to execute 2-3 times a day
+* [`twitterhelpbot.exe`](twitterhelpbot.md) - Use Telegram web client to like & retweet the links in [@TwitterHelpBot](https://t.me/TwitterHelpBot)
+    * Recommended to execute twice a day
+* [`tweetall.exe`](tweetall.md) - Prepare the URL of the tweets in `tweet_list.txt`. Double clicking the executable and all tweets will be liked & retweeted.
 
-## 注意
-* 每個 exe 第一次行都會問係唔係開 Firewall, 因為個 Program 同 Browser 之間係用 Network 溝通，但因為只係 localhost 行，可以㩒 Cancel
+## Note
+* All executable will prompt to unblock the firewall for the first time. It is because the program and the browser is using network to communicate to each other. However, it is limited to the localhost network only, it is safe to press the Cancel button
 ![](images/firewall.png)
 
-## 問題
-會不定時出呢個 Exception, 主要因為 Twitter 响背後 Refresh 咗，攪到 Program 有嘅 HTML element 同你見到嘅 HTML element 唔一樣，好多時再行一次個 Program 就 OK.
+## Problems
+Occasionally, it might prompt for an Exception. It is due to Twitter will refresh in the background making the visible HTML is different from the internal representation. It will disappear when you rerun the program.
 ```
  Traceback (most recent call last):
   File "retweet.py", line 37, in <module>
