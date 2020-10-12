@@ -52,5 +52,3 @@ if __name__ == "__main__":
 
     print("bye " + str(datetime.now()))
     print("")
-
-    quit()
