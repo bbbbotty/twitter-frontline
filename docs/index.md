@@ -5,7 +5,7 @@ A few programs to automate Twitter "missions". PLease use the account to post yo
 
 * [`retweet.exe`](retweet.md) - Like & Retweet [@shiroihamusan 小白鼠先生](https://twitter.com/shiroihamusan) when double clicked
     * Recommended to execute 2-3 times a day
-* [`twitterhelpbot.exe`](twitterhelpbot.md) - Use Telegram web client to like & retweet the links in [@TwitterHelpBot](https://t.me/TwitterHelpBot)
+* [`twitterhelpbot.exe`](twitterhelpbot.md) - Double click and the program will use Telegram web client to like & retweet the links in [@TwitterHelpBot](https://t.me/TwitterHelpBot)
     * Recommended to execute twice a day
 * [`tweetall.exe`](tweetall.md) - Prepare the URL of the tweets in `tweet_list.txt`. Double clicking the executable and all tweets will be liked & retweeted.
 

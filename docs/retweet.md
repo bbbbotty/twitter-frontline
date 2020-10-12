@@ -15,7 +15,7 @@ retweet.exe [-h] [--max_hours MAX_HOURS] [--min_likes MIN_LIKES]
 | Parameter         | Description    | Default                       |
 |-------------------|----------------|------------------------------|
 | --max_hours | Like & retweet the tweets in specified hours | 18    |
-| --min_likes | The tweets need at least spcified likes to Like & retweet | 100    |
+| --min_likes | The tweets need at least specified likes to Like & retweet | 100    |
 | --posts_to_retweet | Retweet how many post to stop| 20    |
 | --posts_to_read | Read how many post to stop | 50    |
 | --headless | No UI |     |

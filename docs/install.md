@@ -1,4 +1,4 @@
-Installation
+# Installation
 1. Download Twitter Frontline: <https://github.com/bbbotty/twitter-frontline/releases>
     1. Extract `twitter-frontline.{VERSION}.zip` to C:\twitter-frontline
 1. Download Gecko Driver: <https://github.com/mozilla/geckodriver/releases>
