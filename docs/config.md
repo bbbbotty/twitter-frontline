@@ -44,7 +44,7 @@ v1.0.3 或以上
 
 >
 
-# [範例]
+# 範例
 ```
 [common]
 executable_path=ff\App\Firefox64\firefox.exe
