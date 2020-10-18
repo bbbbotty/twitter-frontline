@@ -10,7 +10,7 @@
 
 ## 用法
 ```
-twitterhelpbot.exe [-h] [--wait WAIT] [--continuation] [--headless] [--history]
+twitterhelpbot.exe [-h] [--wait WAIT] [--continuation] [--headless] [--history] [--output_file]
 ```
 | 參數        | 咩嚟                               | 預設值 |
 |-------------|-----------------------------------|--------|

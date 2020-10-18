@@ -30,7 +30,7 @@ v1.0.3 或以上
 | 參數        | 咩嚟                               | 預設值 |
 |-------------|-----------------------------------|--------|
 | delete_file | 完成 Retweet 後係咪將 `url_or_file` 刪除 |     |
-| history | 記低 Retweet 過乜，唔會再去，想不留㾗跡可以 pass 個 "" 入去 | history.json |
+| history | 記低 Retweet 過乜，唔會再去，想不留㾗跡可以唔放任何數值 (`history=`) 入去 | history.json |
 | url_or_file | 有 Twitter links 嘅 Text file 或者網頁 | tweet_list.txt |
 
 >
@@ -39,7 +39,7 @@ v1.0.3 或以上
 | 參數        | 咩嚟                               | 預設值 |
 |-------------|-----------------------------------|--------|
 | wait | 等幾多秒 Telegram Web Client Ready | 10    |
-| history | 記低 Retweet 過乜，唔會再去，想不留㾗跡可以 pass 個 "" 入去 | history.json |
+| history | 記低 Retweet 過乜，唔會再去，想不留㾗跡可以唔放任何數值 (`history=`) 入去 | history.json |
 | output_file | 唔即時 retweet, save 落個 file 度可以俾 tweetall 去 retweet | tweet_list.txt |
 
 >
