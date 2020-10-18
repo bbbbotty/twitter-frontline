@@ -1,5 +1,5 @@
 # config.ini
-Where the default values located. Command-line parameter, exists, will override the settings.
+Where the default values located. Command-line parameters, if exist, will override the settings.
 
 ## Availability
 v1.0.3 or above
