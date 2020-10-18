@@ -16,7 +16,7 @@ retweet.exe [-h] [--max_hours MAX_HOURS] [--min_likes MIN_LIKES] [--max_run_minu
 |-------------|-----------------------------------|--------|
 | --max_hours | Like & retweet 幾多個鐘頭內嘅 Tweet | 18    |
 | --min_likes | 條 Tweet 最少要有幾多 Likes 先會 Like & retweet | 100    |
-| max_run_minutes | Program 最多行幾多分鐘 | 3    |
+| --max_run_minutes | Program 最多行幾多分鐘 | 3    |
 | --posts_to_retweet | 要 Retweet 幾多條先停 | 20    |
 | --posts_to_read | 要碌過幾多條 Tweet 先停 | 50    |
 | --headless | 無 UI |     |
