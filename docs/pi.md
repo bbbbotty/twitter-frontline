@@ -31,30 +31,19 @@
 
 可以試吓行呢句去睇吓有無 Error: `/path/to/firefox -P xxxxx.default-esr -headless`
 
+## config.ini
+無 Error 嘅話就可以改 [config.ini](config.md) 嘅 `common` section
+```
+[common]
+executable_path=/usr/bin/firefox
+profile_path=/home/pi/.mozilla/firefox/xxxxx.default-esr
+headless=True
+debug=False
+```
+
 # 執行示範
 ```
 python retweet.py –-executable_path /usr/bin/firefox –-profile_path /home/pi/.mozilla/firefox/xxxxx.default-esr --headless
-```
-
-# 改 Code
-如果唔想咁麻煩，可以直接改 source code
-## retweet.py
-第 17-18 行:
-```
-parser.add_argument('--executable_path', default="/usr/bin/firefox")
-parser.add_argument('--profile_path', default="/home/pi/.mozilla/firefox/xxxxx.default-esr")
-```
-## tweetall.py
-第 13-14 行:
-```
-parser.add_argument('--executable_path', default="/usr/bin/firefox")
-parser.add_argument('--profile_path', default="/home/pi/.mozilla/firefox/xxxxx.default-esr")
-```
-## twitterhelpbot.py
-第 18-19 行:
-```
-parser.add_argument('--executable_path', default="/usr/bin/firefox")
-parser.add_argument('--profile_path', default="/home/pi/.mozilla/firefox/xxxxx.default-esr")
 ```
 
 # VPN

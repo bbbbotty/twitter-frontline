@@ -8,11 +8,12 @@ Like & Retweet 所有响 Text file 或者網頁入面嘅 twitter links
 
 ## 用法
 ```
-tweetall.exe [-h] [--headless] [--history] [url_or_file]
+tweetall.exe [-h] [--headless] [--delete_file] [--history] [url_or_file]
 ```
 | 參數        | 咩嚟                               | 預設值 |
 |-------------|-----------------------------------|--------|
 | --headless | 無 UI |     |
+| --delete_file | 完成 Retweet 後係咪將 `url_or_file` 刪除 |     |
 | --history | 記低 Retweet 過乜，唔會再去，想不留㾗跡可以 pass 個 "" 入去 | history.json |
 | url_or_file | 有 Twitter links 嘅 Text file 或者網頁 | tweet_list.txt |
 

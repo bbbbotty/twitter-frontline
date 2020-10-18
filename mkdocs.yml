@@ -1,7 +1,8 @@
 site_name: Twitter 戰線
-pages:
+nav:
   - 主頁: index.md
   - 安裝: install.md
+  - config.ini: config.md
   - Windows:
     - retweet.exe: retweet.md
     - twitterhelpbot.exe: twitterhelpbot.md

@@ -18,6 +18,7 @@ twitterhelpbot.exe [-h] [--wait WAIT] [--continuation] [--headless] [--history]
 | --continuation | 繼續之前嘅任務 | |
 | --headless | 無 UI |     |
 | --history | 記低 Retweet 過乜，唔會再去，想不留㾗跡可以 pass 個 "" 入去 | history.json |
+| --output_file | 唔即時 retweet, save 落個 file 度可以俾 tweetall 去 retweet | tweet_list.txt |
 
 >
 
