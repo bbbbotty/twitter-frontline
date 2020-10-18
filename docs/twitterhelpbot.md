@@ -10,7 +10,7 @@ Use Telegram web client to like and retweets [@TwitterHelpBot](https://t.me/Twit
 
 ## Usage
 ```
-twitterhelpbot.exe [-h] [--wait WAIT] [--continuation] [--headless] [--history]
+twitterhelpbot.exe [-h] [--wait WAIT] [--continuation] [--headless] [--history] [--output_file]
 ```
 | Parameter         | Description    | Default                       |
 |-------------|-----------------------------------|--------|
@@ -18,6 +18,7 @@ twitterhelpbot.exe [-h] [--wait WAIT] [--continuation] [--headless] [--history]
 | --continuation | Continue previous tasks | |
 | --headless | No UI |     |
 | --history | Save the retweet URLs to prevent revisiting. Use "" if no history desired | history.json |
+| --output_file | Will not retweet immediately. It saves the links into a file for tweetall to retweet | tweet_list.txt |
 
 >
 

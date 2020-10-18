@@ -8,7 +8,7 @@ It does not login to Twitter. Please use Firefox login once first.
 
 ## Usage
 ```
-retweet.exe [-h] [--max_hours MAX_HOURS] [--min_likes MIN_LIKES] 
+retweet.exe [-h] [--max_hours MAX_HOURS] [--min_likes MIN_LIKES] [--max_run_minutes MAX_RUN_MINUTES]
             [--posts_to_retweet POSTS_TO_RETWEET] [--posts_to_read POSTS_TO_READ] 
             [--headless] [url_or_file]
 ```
@@ -16,6 +16,7 @@ retweet.exe [-h] [--max_hours MAX_HOURS] [--min_likes MIN_LIKES]
 |-------------------|----------------|------------------------------|
 | --max_hours | Like & retweet the tweets in specified hours | 18    |
 | --min_likes | The tweets need at least specified likes to Like & retweet | 100    |
+| --max_run_minutes | How long can the program run (in minutes)| 3    |
 | --posts_to_retweet | Retweet how many post to stop| 20    |
 | --posts_to_read | Read how many post to stop | 50    |
 | --headless | No UI |     |

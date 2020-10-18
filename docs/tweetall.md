@@ -8,11 +8,12 @@ It does not login to Twitter. Please use Firefox login once first.
 
 ## Usage
 ```
-tweetall.exe [-h] [--headless] [--history] [url_or_file]
+tweetall.exe [-h] [--headless] [--delete_file] [--history] [url_or_file]
 ```
 | Parameter         | Description    | Default                       |
 |-------------|-----------------------------------|--------|
 | --headless | No UI |     |
+| --delete_file | Delete `url_or_file` after retweet |     |
 | --history | Save the retweet URLs to prevent revisiting. Use "" if no history desired | history.json |
 | url_or_file | File or web page listed the tweets | tweet_list.txt |
 

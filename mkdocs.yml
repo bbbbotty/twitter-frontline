@@ -1,7 +1,8 @@
 site_name: Twitter Frontline
-pages:
-  - Main: index.md
+nav:
+  - Home: index.md
   - Installation: install.md
+  - config.ini: config.md
   - Windows:
     - retweet.exe: retweet.md
     - twitterhelpbot.exe: twitterhelpbot.md

@@ -31,30 +31,19 @@ The default values are for Forefox Portable running in Windows, please use the f
 
 Test if it runs without errors: `/path/to/firefox -P xxxxx.default-esr -headless`
 
-# Example
+## config.ini
+If there is no error, update the `common` section in [config.ini](config.md)
 ```
-python retweet.py –-executable_path /usr/bin/firefox –-profile_path /home/pi/.mozilla/firefox/xxxxx.default-esr --headless
+[common]
+executable_path=/usr/bin/firefox
+profile_path=/home/pi/.mozilla/firefox/xxxxx.default-esr
+headless=True
+debug=False
 ```
 
-# Change the Code
-You can change the parameter default values in the source code
-## retweet.py
-Line 17-18:
+# Example
 ```
-parser.add_argument('--executable_path', default="/usr/bin/firefox")
-parser.add_argument('--profile_path', default="/home/pi/.mozilla/firefox/xxxxx.default-esr")
-```
-## tweetall.py
-Line 13-14:
-```
-parser.add_argument('--executable_path', default="/usr/bin/firefox")
-parser.add_argument('--profile_path', default="/home/pi/.mozilla/firefox/xxxxx.default-esr")
-```
-## twitterhelpbot.py
-Line 18-19:
-```
-parser.add_argument('--executable_path', default="/usr/bin/firefox")
-parser.add_argument('--profile_path', default="/home/pi/.mozilla/firefox/xxxxx.default-esr")
+python retweet.py
 ```
 
 # VPN
