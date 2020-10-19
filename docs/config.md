@@ -29,7 +29,7 @@ v1.0.3 or above
 # [tweetall]
 | Parameter   | Description                       | Default |
 |-------------|-----------------------------------|---------|
-| delete_file | Delete `url_or_file` after retweet |     |
+| delete_file | Delete `url_or_file` after retweet | False  |
 | history | Save the retweet URLs to prevent revisiting. Use empty value (`history=`) if no history desired | history.json |
 | url_or_file | File or web page listed the tweets | tweet_list.txt |
 
@@ -40,7 +40,7 @@ v1.0.3 or above
 |-------------|-----------------------------------|---------|
 | wait | How long to wait for Telegram Web Client getting ready (seconds) | 10    |
 | history | Save the retweet URLs to prevent revisiting. Use empty value (`history=`) if no history desired | history.json |
-| output_file | Will not retweet immediately. It saves the links into a file for tweetall to retweet | tweet_list.txt |
+| output_file | Will not retweet immediately. It saves the links into a file for tweetall to retweet |     |
 
 >
 
@@ -68,5 +68,5 @@ url_or_file=tweet_list.txt
 [twitterhelpbot]
 wait=10
 history=history.json
-output_file=tweet_list.txt
+output_file=
 ```
