@@ -70,8 +70,8 @@ class Twitter():
             self.browser.click_and_wait(tweet.like_button, 2)
 
     def confirm_retweet(self):
-        self.browser.wait(By.XPATH, "//div[@data-testid='retweetConfirm']")        
-        self.browser.click_and_wait(self.browser.find_element_by_xpath("//div[@data-testid='retweetConfirm']"), 0.5)
+        self.browser.wait(By.XPATH, "//div[@data-testid='tweetButton']")        
+        self.browser.click_and_wait(self.browser.find_element_by_xpath("//div[@data-testid='tweetButton']"), 2)
 
     def get_tweets(self):
         prev_first_tweet = None
